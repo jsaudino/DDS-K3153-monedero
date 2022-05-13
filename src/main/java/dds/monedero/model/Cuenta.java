@@ -33,6 +33,14 @@ public class Cuenta {
     this.depositos = depositos;
   }
 
+  public List<Extraccion> getExtracciones() {
+    return extracciones;
+  }
+
+  public List<Deposito> getDepositos() {
+    return depositos;
+  }
+
   public void poner(Double cuanto) {
     if (cuanto <= 0) {
       throw new MontoNegativoException(cuanto + ": el monto a ingresar debe ser un valor positivo");
